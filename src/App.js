@@ -1,30 +1,12 @@
 import './App.css';
-import {Navbar,Nav, Container} from "react-bootstrap";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header>
-        <Navbar bg="light" expand="lg">
-          <Container>
-            <Navbar.Brand href="/">
-              <div
-                className="navbar__logo-img d-inline-block align-top"
-                alt="Loteria logo"
-              ></div>
-            </Navbar.Brand>
-            <Navbar.Toggle aria-controls="basic-navbar-nav" />
-            <Navbar.Collapse id="basic-navbar-nav">
-              <Nav className="me-auto">
-                <Nav.Link href="">Lotería</Nav.Link>
-                <Nav.Link href="">Sorteos</Nav.Link>
-                <Nav.Link href="">Iniciar Sesión</Nav.Link>
-                <Nav.Link href="">Registrarse</Nav.Link>
-              </Nav>
-            </Navbar.Collapse>
-          </Container>
-        </Navbar>
-      </header>
+
+      <Header/>
 
       <main class="main">
           <div class="main__header">
@@ -40,24 +22,7 @@ function App() {
           </div>
       </main>
 
-      <footer class="footer">
-          <div class="footer__logo">
-              <div class="footer__logo-img"></div>
-          </div>
-          <div class="footer__contact">
-              <div class="footer__contact-title"><strong>Contacto:</strong></div>
-              <div class="footer__contact-text"><a href="mailto:ignacio.rene1994@gmail.com">ignacio.rene1994@gmail.com</a></div>
-          </div>
-          <div class="footer__social">
-              <div class="footer__social-text"><strong>Síguenos en nuestras redes sociales:</strong></div>
-              <div class="footer__social__icons">
-                  
-              </div>
-          </div>
-          <div class="footer-copyright">
-              &copy; Lotería
-          </div>
-      </footer>
+      <Footer/>
     </div>
   );
 }
