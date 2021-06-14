@@ -21,7 +21,6 @@ function App() {
               <p>Semanalmente se realiza una lotería pública en la que cualquier usuario puede participar y solo debe abonar el precio de ticket. Los ganadores tendrán depositados automáticamente en sus billeteras virtuales el dinero ganado.</p>
           </div>
       </main>
-
       <Footer/>
     </div>
   );

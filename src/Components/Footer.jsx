@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../img/dice.png";
 import FooterWrapper from "../Styles/Footer";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faInstagram} from "@fortawesome/free-brands-svg-icons";
 
 const Footer= ()=>{
     return(
@@ -16,7 +18,8 @@ const Footer= ()=>{
                 <div class="footer__social">
                     <div class="footer__social-text"><strong>Síguenos en nuestras redes sociales:</strong></div>
                     <div class="footer__social__icons">
-                        
+                        <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faFacebookSquare} />{" "}</a>
+                        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><FontAwesomeIcon icon={faInstagram} /></a>
                     </div>
                 </div>
                 <div class="footer-copyright">

@@ -20,7 +20,8 @@ const Header=()=>{
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="me-auto">
+                    <Nav className="me-auto"></Nav>
+                    <Nav>
                         <Nav.Link href="">Lotería</Nav.Link>
                         <Nav.Link href="">Sorteos</Nav.Link>
                         <Nav.Link href="">Iniciar Sesión</Nav.Link>
