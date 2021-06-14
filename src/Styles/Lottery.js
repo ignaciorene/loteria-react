@@ -3,8 +3,8 @@ import styled from "styled-components";
 const LotteryWrapper=styled.div`
     .lottery-input-container{
         width:100%;
-        border-bottom:1px solid #126e82;
         padding-bottom:1.5em;
+        padding-top:1em;
     }
 
     h2{
