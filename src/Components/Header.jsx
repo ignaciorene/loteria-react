@@ -6,7 +6,10 @@ import Logo from "../img/dice_black.png";
 import styled from "styled-components";
 
 const HeaderWrapper=styled.div`
-    
+    .navbar-options{
+        font-weight: bold;
+        font-size: 1.25em;
+    };
 `;
 
 const Header=()=>{
@@ -21,12 +24,14 @@ const Header=()=>{
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto"></Nav>
-                    <Nav>
-                        <Nav.Link href="">Lotería</Nav.Link>
-                        <Nav.Link href="">Sorteos</Nav.Link>
-                        <Nav.Link href="">Iniciar Sesión</Nav.Link>
-                        <Nav.Link href="">Registrarse</Nav.Link>
-                    </Nav>
+                    <div class="navbar-options">
+                        <Nav>
+                            <Nav.Link href="">Lotería</Nav.Link>
+                            <Nav.Link href="">Sorteos</Nav.Link>
+                            <Nav.Link href="">Iniciar Sesión</Nav.Link>
+                            <Nav.Link href="">Registrarse</Nav.Link>
+                        </Nav>
+                    </div>
                     </Navbar.Collapse>
                 </Container>
                 </Navbar>
