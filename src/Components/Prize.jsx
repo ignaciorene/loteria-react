@@ -6,14 +6,21 @@ import { Button } from "react-bootstrap";
 import PrizeMain from "./PrizeMain";
 
 const Prize=()=>{
+
+    const prize={
+        id:"random",
+        author:"Ignacio",
+        prize:"auto 0km",
+        expire:"1/12/2021"
+    }
+
     return(
         <PrizeWrapper>
             <div class="prize-input-container">
             <h2 class="prize-title">Sorteo</h2>
             <div class="prize-input-form">         
                 <InputGroup className="mb-3">
-                    <h3>Ingrese el nombre del sorteo</h3>
-                    <FormControl />
+                    <FormControl type="text" placeholder="Ingrese el nombre del sorteo"/>
                     <InputGroup.Append>
                     <Button variant="primary">Aceptar</Button>
                     </InputGroup.Append>
@@ -22,7 +29,7 @@ const Prize=()=>{
                     <Button variant="primary">Crear Sorteo</Button>
                 </div>
             </div>
-            <PrizeMain/>
+            <PrizeMain prizeInfo={prize}/>
             </div>
         </PrizeWrapper>
     );

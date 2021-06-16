@@ -10,6 +10,7 @@ const LotteryWrapper=styled.div`
     h2{
         color: #126e82;
         font-size:3em;
+        margin-bottom:0.5em;
     };
 
     .lottery-input-form{
