@@ -6,17 +6,12 @@ import { Table } from "react-bootstrap";
 const LotteryMain=(props)=>{
 
     const {lotteryInfo}=props;
-    const {id="Pública"}=lotteryInfo;
-    const {prize="$10.000.000"}=lotteryInfo;
-    const {ticket="$10"}=lotteryInfo;
-    const {expire="1/12/2021"}=lotteryInfo;
-    const {prizeList={
-        primerPuesto:"80%",
-        segundoPuesto:"15%",
-        tercerPuesto:"5%"
-        }
-    }=lotteryInfo;
-    
+    const {id}=lotteryInfo;
+    const {prize}=lotteryInfo;
+    const {ticket}=lotteryInfo;
+    const {expire}=lotteryInfo;
+    const {prizeList}=lotteryInfo;
+
     return(
         <LotteryMainWrapper>
             <div class="lotteryMain">

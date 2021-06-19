@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import LotteryWrapper from "../Styles/Lottery";
 import InputGroup from 'react-bootstrap/InputGroup';
 import { FormControl } from "react-bootstrap";
@@ -19,23 +19,38 @@ const Lottery=()=>{
         }
     };
 
+    var inputLottery=lottery.id;
+
+    const [stateLottery, setStateLottery]=useState(lottery);
+
+    useEffect(()=>{
+        console.log(stateLottery);
+    },[stateLottery]);
+
+    const changeLottery=()=>{
+        setStateLottery(()=>{
+            lottery.id=inputLottery;
+            return (lottery);
+        });
+    };
+
     return(
         <LotteryWrapper>
             <div class="lottery-input-container">
             <h2 class="lottery-title">Lotería</h2>
             <div class="lottery-input-form">         
                 <InputGroup className="mb-3">
-                    <FormControl type="text" placeholder="Ingrese nombre de la lotería"/>
+                    <FormControl type="text" placeholder="Ingrese nombre de la lotería" onChange={(e)=>inputLottery=e.target.value}/>
                     <InputGroup.Append>
-                    <Button variant="primary">Aceptar</Button>
+                    <Button variant="primary" onClick={changeLottery}>Aceptar</Button>
                     </InputGroup.Append>
                 </InputGroup>
                 <div class="lottery-createButton">
-                    <Button variant="primary">Crear Lotería</Button>
+                    <Button variant="primary" onClick={()=>console.log(stateLottery)}>Crear Lotería</Button>
                 </div>
             </div>
             </div>
-            <LotteryMain lotteryInfo={lottery}/>
+            <LotteryMain lotteryInfo={stateLottery}/>
         </LotteryWrapper>
     );
 };
