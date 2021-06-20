@@ -1,7 +1,6 @@
 import './App.css'
 import Header from "./Components/Header"
 import Footer from "./Components/Footer"
-import Lottery from "./Components/Lottery.jsx"
 
 function App() {
   return (
@@ -20,7 +19,6 @@ function App() {
               <p>Semanalmente se realiza una lotería pública en la que cualquier usuario puede participar y solo debe abonar el precio de ticket. Los ganadores tendrán depositados automáticamente en sus billeteras virtuales el dinero ganado.</p>
           </div>
       </main>
-      <Lottery/>
       <Footer/>
     </div>
   );
